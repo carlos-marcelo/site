@@ -7,52 +7,98 @@
   <title>Marcelo Asconavieta</title>
   <style>
     :root {
-      --bg: #f6fbff;
-      --card: #ffffff;
-      --text: #0f1724;
-      --muted: #6b7280;
+      --card-bg: rgba(255, 255, 255, 0.85);
+      --text-color: #0f1724;
+      --muted-color: #6b7280;
+      --facebook-color: #1877f2;
+      --linkedin-color: #0a66c2;
     }
-    html,body{
-      height:100%;
-      margin:0;
-      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      background: linear-gradient(180deg, var(--bg), #eef6ff);
-      color:var(--text);
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background-size: cover;
+      filter: grayscale(100%);
+      color: var(--text-color);
     }
-    .wrap{
-      min-height:100%;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:24px;
+    .wrap {
+      min-height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      backdrop-filter: brightness(0.8);
     }
-    .card{
-      background:var(--card);
-      padding:36px 44px;
-      border-radius:14px;
-      box-shadow: 0 8px 30px rgba(15,23,36,0.08);
-      text-align:center;
-      max-width:820px;
-      width:100%;
+    .card {
+      background: var(--card-bg);
+      padding: 36px 44px;
+      border-radius: 14px;
+      box-shadow: 0 8px 30px rgba(15, 23, 36, 0.08);
+      text-align: center;
+      max-width: 820px;
+      width: 100%;
     }
-    h1{
-      margin:0;
-      font-size:2.1rem;
+    h1 {
+      margin: 0;
+      font-size: 2.1rem;
       letter-spacing: -0.02em;
     }
-    p.lead{
-      margin:14px 0 0;
-      color:var(--muted);
-      font-size:1rem;
+    .social {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 24px;
     }
-    footer{
-      margin-top:20px;
-      font-size:0.88rem;
-      color:var(--muted);
+    .social a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      cursor: pointer;
+      filter: drop-shadow(0 0 2px rgba(0,0,0,0.15));
+      transition: filter 0.3s ease;
     }
-    @media (max-width:480px){
-      .card{ padding:28px 18px; border-radius:12px; }
-      h1{ font-size:1.6rem; }
+    .social a:hover {
+      animation: dance 0.6s infinite;
+      filter: drop-shadow(0 0 8px rgba(0,0,0,0.3));
+    }
+    .social svg {
+      width: 28px;
+      height: 28px;
+      display: block;
+      transition: fill 0.3s;
+    }
+    .facebook svg path {
+      fill: var(--facebook-color);
+    }
+    .linkedin svg path {
+      fill: var(--linkedin-color);
+    }
+    @keyframes dance {
+      0%, 100% { transform: translateX(0); }
+      25% { transform: translateX(-5px) rotate(-5deg); }
+      50% { transform: translateX(5px) rotate(5deg); }
+      75% { transform: translateX(-5px) rotate(-5deg); }
+    }
+    @media (max-width:480px) {
+      .card {
+        padding: 28px 18px;
+        border-radius: 12px;
+      }
+      h1 {
+        font-size: 1.6rem;
+      }
+      .social a {
+        width: 40px;
+        height: 40px;
+      }
+      .social svg {
+        width: 22px;
+        height: 22px;
+      }
     }
   </style>
 </head>
@@ -60,8 +106,25 @@
   <div class="wrap">
     <div class="card" role="main">
       <h1>Marcelo Asconavieta</h1>
-      <p class="lead">Para começar a fazer um site no centro.</p>
-      <footer>Site temporário — em construção</footer>
+      <div class="social">
+        <a href="https://facebook.com/profile.php?id=100087579074475" target="_blank" rel="noopener noreferrer" class="facebook" aria-label="Facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" aria-hidden="true" focusable="false">
+            <path d="M279.14 288l14.22-92.66h-88.91V127.64c0-25.35 
+              12.42-50.06 52.24-50.06H293V6.26S277.52 0 262.3 
+              0c-73.22 0-121.09 44.38-121.09 124.72v70.62H86.41V288h54.8v224h100.2V288z"/>
+          </svg>
+        </a>
+        <a href="https://linkedin.com/in/marcelo-asconavieta-4498a8145" target="_blank" rel="noopener noreferrer" class="linkedin" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" aria-hidden="true" focusable="false">
+            <path d="M100.28 448H7.4V148.9h92.88zM53.79 
+              108.1C24.09 108.1 0 83.5 0 53.8S24.09-.5 
+              53.79-.5s53.79 24.09 53.79 54.29-24.09 
+              54.31-53.79 54.31zM447.9 448h-92.4V302.4c0-34.7-.7-79.3-48.3-79.3-48.3 
+              0-55.7 37.7-55.7 76.6V448h-92.4V148.9h88.7v40.8h1.3c12.3-23.3 
+              42.5-48 87.4-48 93.5 0 110.7 61.5 110.7 141.3V448z"/>
+          </svg>
+        </a>
+      </div>
     </div>
   </div>
 </body>
