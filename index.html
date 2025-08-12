@@ -1,131 +1,116 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta name="facebook-domain-verification" content="0l63v15fz0v56zli7blom52ex7tabg" />
+    <meta name="facebook-domain-verification" content="0l63v15fz0v56zli7blom52ex7tabg" />
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Marcelo Asconavieta</title>
   <style>
-    :root {
-      --card-bg: rgba(255, 255, 255, 0.85);
-      --text-color: #0f1724;
-      --muted-color: #6b7280;
-      --facebook-color: #1877f2;
-      --linkedin-color: #0a66c2;
-    }
-    html, body {
-      height: 100%;
+    body {
+      font-family: Arial, sans-serif;
       margin: 0;
-      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
-      background-size: cover;
-      filter: grayscale(100%);
-      color: var(--text-color);
+      background-color: #f4f4f4;
+      color: #333;
     }
-    .wrap {
-      min-height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 24px;
-      backdrop-filter: brightness(0.8);
-    }
-    .card {
-      background: var(--card-bg);
-      padding: 36px 44px;
-      border-radius: 14px;
-      box-shadow: 0 8px 30px rgba(15, 23, 36, 0.08);
+    header, footer {
+      background-color: #222;
+      color: #fff;
+      padding: 20px;
       text-align: center;
-      max-width: 820px;
-      width: 100%;
     }
-    h1 {
-      margin: 0;
-      font-size: 2.1rem;
-      letter-spacing: -0.02em;
+    .container {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
     }
-    .social {
+    h1, h2 {
+      color: #444;
+    }
+    .servicos {
       margin-top: 20px;
-      display: flex;
-      justify-content: center;
-      gap: 24px;
     }
-    .social a {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      cursor: pointer;
-      filter: drop-shadow(0 0 2px rgba(0,0,0,0.15));
-      transition: filter 0.3s ease;
+    .servico {
+      background: #fff;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
-    .social a:hover {
-      animation: dance 0.6s infinite;
-      filter: drop-shadow(0 0 8px rgba(0,0,0,0.3));
+    .info-contato {
+      margin-top: 20px;
+      line-height: 1.6;
     }
-    .social svg {
-      width: 28px;
-      height: 28px;
-      display: block;
-      transition: fill 0.3s;
+    .contato-links a {
+      display: inline-block;
+      margin-right: 10px;
+      color: #0066cc;
+      text-decoration: none;
     }
-    .facebook svg path {
-      fill: var(--facebook-color);
+    .contato-links a:hover {
+      text-decoration: underline;
     }
-    .linkedin svg path {
-      fill: var(--linkedin-color);
+    .legal {
+      font-size: 0.9em;
+      color: #ccc;
     }
-    @keyframes dance {
-      0%, 100% { transform: translateX(0); }
-      25% { transform: translateX(-5px) rotate(-5deg); }
-      50% { transform: translateX(5px) rotate(5deg); }
-      75% { transform: translateX(-5px) rotate(-5deg); }
-    }
-    @media (max-width:480px) {
-      .card {
-        padding: 28px 18px;
-        border-radius: 12px;
-      }
-      h1 {
-        font-size: 1.6rem;
-      }
-      .social a {
-        width: 40px;
-        height: 40px;
-      }
-      .social svg {
-        width: 22px;
-        height: 22px;
-      }
+    .politicas {
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <div class="card" role="main">
-      <h1>Marcelo Asconavieta</h1>
-      <div class="social">
-        <a href="https://facebook.com/profile.php?id=100087579074475" target="_blank" rel="noopener noreferrer" class="facebook" aria-label="Facebook">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" aria-hidden="true" focusable="false">
-            <path d="M279.14 288l14.22-92.66h-88.91V127.64c0-25.35 
-              12.42-50.06 52.24-50.06H293V6.26S277.52 0 262.3 
-              0c-73.22 0-121.09 44.38-121.09 124.72v70.62H86.41V288h54.8v224h100.2V288z"/>
-          </svg>
-        </a>
-        <a href="https://linkedin.com/in/marcelo-asconavieta-4498a8145" target="_blank" rel="noopener noreferrer" class="linkedin" aria-label="LinkedIn">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" aria-hidden="true" focusable="false">
-            <path d="M100.28 448H7.4V148.9h92.88zM53.79 
-              108.1C24.09 108.1 0 83.5 0 53.8S24.09-.5 
-              53.79-.5s53.79 24.09 53.79 54.29-24.09 
-              54.31-53.79 54.31zM447.9 448h-92.4V302.4c0-34.7-.7-79.3-48.3-79.3-48.3 
-              0-55.7 37.7-55.7 76.6V448h-92.4V148.9h88.7v40.8h1.3c12.3-23.3 
-              42.5-48 87.4-48 93.5 0 110.7 61.5 110.7 141.3V448z"/>
-          </svg>
-        </a>
-      </div>
+
+<header>
+  <h1>Marcelo Asconavieta</h1>
+  <p>Treinamento e Desenvolvimento nas áreas de cosméticos, perfumaria e higiene pessoal</p>
+</header>
+
+<div class="container">
+  <h2>Serviços de Treinamento</h2>
+  <div class="servicos">
+    <div class="servico">
+      <h3>Capacitação em Vendas</h3>
+      <p>Treinamento especializado para equipes que atuam com cosméticos e perfumaria, focado em técnicas de abordagem, fidelização e aumento de conversão.</p>
+    </div>
+    <div class="servico">
+      <h3>Desenvolvimento Profissional</h3>
+      <p>Workshops e mentorias voltadas para o crescimento pessoal e profissional de colaboradores no setor de beleza e higiene.</p>
+    </div>
+    <div class="servico">
+      <h3>Consultoria Estratégica</h3>
+      <p>Orientação personalizada para empresas que desejam melhorar seus processos de atendimento, marketing e gestão de equipe.</p>
     </div>
   </div>
+
+  <div class="info-contato">
+    <h2>Contato</h2>
+    <p><strong>WhatsApp:</strong> <a href="https://wa.me/5555984499200" target="_blank">(55) 98449-9200</a></p>
+    <p><strong>E-mail:</strong> <a href="mailto:marceloasconavieta@gmail.com">marceloasconavieta@gmail.com</a></p>
+    <p><strong>Endereço:</strong> Dom Predor II, 735 – Santana do Livramento, RS, Brasil</p>
+    <p><strong>CEP:</strong> 97573-435</p>
+    <div class="contato-links">
+      <p><strong>Redes sociais:</strong></p>
+      <a href="https://facebook.com/profile.php?id=100087579074475" target="_blank">Facebook</a>
+      <a href="https://linkedin.com/in/marcelo-asconavieta-4498a8145" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+
+  <div class="politicas">
+    <h2>Política de Privacidade e Termos de Uso</h2>
+    <p>Este site respeita sua privacidade. Nenhuma informação pessoal será compartilhada com terceiros sem consentimento. Ao utilizar nossos serviços, você concorda com nossos termos de uso.</p>
+  </div>
+
+  <div class="info-contato">
+    <h2>Licenças e Regulação</h2>
+    <p>Os treinamentos oferecidos seguem as normas vigentes do setor de higiene e beleza. Não comercializamos produtos ou medicamentos de prescrição.</p>
+  </div>
+</div>
+
+<footer>
+  <p class="legal">Razão Social: Marcelo Asconavieta Treinamento e Desenvolvimento</p>
+  <p class="legal">CNPJ: 59.660.223/0001-28</p>
+  <p class="legal">&copy; 2025 Marcelo Asconavieta. Todos os direitos reservados.</p>
+</footer>
+
 </body>
 </html>
