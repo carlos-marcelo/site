@@ -1,60 +1,65 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-    <meta name="facebook-domain-verification" content="0l63v15fz0v56zli7blom52ex7tabg" />
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="facebook-domain-verification" content="0l63v15fz0v56zli7blom52ex7tabg" />
   <title>Marcelo Asconavieta</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      background-color: #f4f4f4;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
       color: #333;
     }
-    header, footer {
+    header {
       background-color: #222;
       color: #fff;
-      padding: 20px;
+      padding: 40px 20px;
       text-align: center;
     }
-    .container {
-      padding: 20px;
-      max-width: 1000px;
-      margin: auto;
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
     }
-    h1, h2 {
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    .section h2 {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
       color: #444;
     }
-    .servicos {
-      margin-top: 20px;
-    }
-    .servico {
-      background: #fff;
-      padding: 15px;
-      margin-bottom: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    .info-contato {
-      margin-top: 20px;
+    .section p, .section a {
+      font-size: 1rem;
       line-height: 1.6;
-    }
-    .contato-links a {
-      display: inline-block;
-      margin-right: 10px;
-      color: #0066cc;
+      color: #555;
       text-decoration: none;
     }
-    .contato-links a:hover {
+    .section a:hover {
       text-decoration: underline;
     }
-    .legal {
-      font-size: 0.9em;
-      color: #ccc;
+    .social-icons a {
+      margin-right: 15px;
+      font-size: 1.5rem;
+      color: #0066cc;
+      transition: color 0.3s;
     }
-    .politicas {
-      margin-top: 40px;
+    .social-icons a:hover {
+      color: #004999;
+    }
+    footer {
+      background-color: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
     }
   </style>
 </head>
@@ -62,54 +67,35 @@
 
 <header>
   <h1>Marcelo Asconavieta</h1>
-  <p>Treinamento e Desenvolvimento nas áreas de cosméticos, perfumaria e higiene pessoal</p>
 </header>
 
 <div class="container">
-  <h2>Serviços de Treinamento</h2>
-  <div class="servicos">
-    <div class="servico">
-      <h3>Capacitação em Vendas</h3>
-      <p>Treinamento especializado para equipes que atuam com cosméticos e perfumaria, focado em técnicas de abordagem, fidelização e aumento de conversão.</p>
-    </div>
-    <div class="servico">
-      <h3>Desenvolvimento Profissional</h3>
-      <p>Workshops e mentorias voltadas para o crescimento pessoal e profissional de colaboradores no setor de beleza e higiene.</p>
-    </div>
-    <div class="servico">
-      <h3>Consultoria Estratégica</h3>
-      <p>Orientação personalizada para empresas que desejam melhorar seus processos de atendimento, marketing e gestão de equipe.</p>
-    </div>
+  <div class="section">
+    <h2>Serviços</h2>
+    <p>Treinamentos, consultorias e desenvolvimento profissional sob medida.</p>
   </div>
 
-  <div class="info-contato">
+  <div class="section">
     <h2>Contato</h2>
     <p><strong>WhatsApp:</strong> <a href="https://wa.me/5555984499200" target="_blank">(55) 98449-9200</a></p>
-    <p><strong>E-mail:</strong> <a href="mailto:marceloasconavieta@gmail.com">marceloasconavieta@gmail.com</a></p>
-    <p><strong>Endereço:</strong> Dom Predor II, 735 – Santana do Livramento, RS, Brasil</p>
-    <p><strong>CEP:</strong> 97573-435</p>
-    <div class="contato-links">
-      <p><strong>Redes sociais:</strong></p>
-      <a href="https://facebook.com/profile.php?id=100087579074475" target="_blank">Facebook</a>
-      <a href="https://linkedin.com/in/marcelo-asconavieta-4498a8145" target="_blank">LinkedIn</a>
+    <p><strong>E-mail:</strong> <a href="mailto:contato@marcelo.far.br">contato@marcelo.far.br</a></p>
+    <div class="social-icons">
+      <a href="https://facebook.com/profile.php?id=100087579074475" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+      <a href="https://linkedin.com/in/marcelo-asconavieta-4498a8145" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
     </div>
   </div>
 
-  <div class="politicas">
-    <h2>Política de Privacidade e Termos de Uso</h2>
-    <p>Este site respeita sua privacidade. Nenhuma informação pessoal será compartilhada com terceiros sem consentimento. Ao utilizar nossos serviços, você concorda com nossos termos de uso.</p>
-  </div>
-
-  <div class="info-contato">
-    <h2>Licenças e Regulação</h2>
-    <p>Os treinamentos oferecidos seguem as normas vigentes do setor de higiene e beleza. Não comercializamos produtos ou medicamentos de prescrição.</p>
+  <div class="section">
+    <h2>Localização</h2>
+    <p>Dom Predor II, 735 – Santana do Livramento, RS, Brasil</p>
+    <p>CEP: 97573-435</p>
   </div>
 </div>
 
 <footer>
-  <p class="legal">Razão Social: Marcelo Asconavieta Treinamento e Desenvolvimento</p>
-  <p class="legal">CNPJ: 59.660.223/0001-28</p>
-  <p class="legal">&copy; 2025 Marcelo Asconavieta. Todos os direitos reservados.</p>
+  <p>Razão Social: Marcelo Asconavieta Treinamento e Desenvolvimento</p>
+  <p>CNPJ: 59.660.223/0001-28</p>
+  <p>&copy; 2025 Marcelo Asconavieta</p>
 </footer>
 
 </body>
